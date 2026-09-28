@@ -13,26 +13,36 @@ render engine. Per-video output (research notes, scripts, generated images, audi
 
 ## Start here
 
-1. Read `CLAUDE.md` — the operating rules for whoever/whatever (human or Claude) works in this repo.
-2. Read `00_Project_Overview/README.md` — the folder map and the two things that must stay
+New to this project? Read these two in order:
+
+1. **[INSTALLATION.md](INSTALLATION.md)** — one-time setup: accounts, dependencies, the two
+   Google Flow style projects, your own binary assets (channel intro, music).
+2. **[USAGE.md](USAGE.md)** — the day-to-day guide: how to start a video, what happens at each
+   pipeline stage, where the checkpoints are, and how a finished video gets to `Publish/`.
+
+Then, for the deeper reference docs behind those two guides:
+
+3. `CLAUDE.md` — the operating rules for whoever/whatever (human or Claude) works in this repo.
+4. `00_Project_Overview/README.md` — the folder map and the two things that must stay
    visually/tonally consistent video to video.
-3. Read `00_Project_Overview/New_Video_Workflow.md` — the actual intake + pipeline steps.
-4. Follow `SETUP.md` for the parts that can't live in git: accounts, the two Google Flow style
-   projects, binary assets (channel intro, music), and dependency installation.
+5. `00_Project_Overview/New_Video_Workflow.md` — the full intake + pipeline spec that
+   `USAGE.md` summarizes.
 
 ## Layout
 
 ```
-CLAUDE.md                     Operating rules / project context for Claude
-SETUP.md                      Everything needed to get this running on a fresh machine
-00_Project_Overview/          Workflow doc, topic log, folder-map README, channel branding (empty, yours to fill)
-01_Research_and_Script/       Research process + script style guide
-02_Image_Prompts/             Image prompt formula, batch template, Flow automation technique,
-                               the two locked visual styles, reference images (empty, yours to fill)
-03_Voice_Over/                TTS setup guide (automated + manual handoff)
-04_Video_Editing/             FFmpeg assembly pipeline doc, the Remotion "enhancer" render engine,
-                               shared asset folders (Music/SFX/Intro — empty, yours to fill)
-.claude/skills/enhance-video/ A Claude Code project skill for re-enhancing an existing video on request
+INSTALLATION.md                One-time setup guide
+USAGE.md                       Day-to-day "how to use it" guide
+CLAUDE.md                      Operating rules / project context for Claude
+SETUP.md                       Same setup info as INSTALLATION.md, in the original reference-doc format
+00_Project_Overview/           Workflow doc, topic log, folder-map README, channel branding (empty, yours to fill)
+01_Research_and_Script/        Research process + script style guide
+02_Image_Prompts/              Image prompt formula, batch template, Flow automation technique,
+                                the two locked visual styles, reference images (empty, yours to fill)
+03_Voice_Over/                 TTS setup guide (automated + manual handoff)
+04_Video_Editing/               FFmpeg assembly pipeline doc, the Remotion "enhancer" render engine,
+                                shared asset folders (Music/SFX/Intro — empty, yours to fill)
+.claude/skills/enhance-video/  A Claude Code project skill for re-enhancing an existing video on request
 ```
 
 `Videos/` and `YOUTUBE_PUBLISH/` are not in this repo (see `.gitignore`) — they hold per-video
