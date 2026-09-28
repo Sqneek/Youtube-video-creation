@@ -1,0 +1,25 @@
+# Per-video generated content — never goes in this repo
+/Videos/
+/YOUTUBE_PUBLISH/
+
+# Remotion engine
+04_Video_Editing/Remotion/node_modules/
+04_Video_Editing/Remotion/public/images/
+04_Video_Editing/Remotion/public/audio/
+
+# Binary channel assets — supply your own locally, not tracked here
+04_Video_Editing/Assets/Music/*
+!04_Video_Editing/Assets/Music/.gitkeep
+04_Video_Editing/Assets/SFX/*
+!04_Video_Editing/Assets/SFX/.gitkeep
+04_Video_Editing/Assets/Intro/*
+!04_Video_Editing/Assets/Intro/.gitkeep
+00_Project_Overview/Channel_Branding/*
+!00_Project_Overview/Channel_Branding/.gitkeep
+02_Image_Prompts/Reference_Images/*
+!02_Image_Prompts/Reference_Images/.gitkeep
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
